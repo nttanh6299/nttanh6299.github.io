@@ -110,9 +110,9 @@ function debounce(fn, ms) {
 //
 
 // EVENT LISTENERS
-mainEle.style.opacity = "0";
+mainEle.style.display = "none";
 window.onload = function () {
-  mainEle.style = null;
+  mainEle.style.display = "block";
   main();
 };
 
