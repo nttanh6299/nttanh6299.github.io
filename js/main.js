@@ -77,7 +77,7 @@ function intro() {
   });
   //
   gsap.from(".home__mybrain h2", { duration: 1, opacity: 0, delay: 2.4 });
-  gsap.from(".brain-box h4", { duration: 1, opacity: 0, delay: 2.5 });
+  gsap.from(".brain-box h3", { duration: 1, opacity: 0, delay: 2.5 });
   gsap.from(".badge", {
     duration: 1,
     opacity: 0,
@@ -110,7 +110,6 @@ function debounce(fn, ms) {
 
 // EVENT LISTENERS
 window.onload = function () {
-  document.body.style.visibility = "visible";
   main();
 };
 
