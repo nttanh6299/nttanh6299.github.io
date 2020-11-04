@@ -108,11 +108,9 @@ function debounce(fn, ms) {
 }
 //
 
-// EVENT LISTENERS
-window.onload = function () {
-  main();
-};
+main();
 
+// EVENT LISTENERS
 window.onscroll = function () {
   const scrollTop = window.pageYOffset;
 
