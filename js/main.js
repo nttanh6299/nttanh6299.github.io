@@ -1,4 +1,5 @@
 "use strict";
+const mainEle = document.getElementById("main");
 
 // ANIMATING INTRO
 function intro() {
@@ -108,9 +109,13 @@ function debounce(fn, ms) {
 }
 //
 
-main();
-
 // EVENT LISTENERS
+mainEle.style.opacity = "0";
+window.onload = function () {
+  mainEle.style = null;
+  main();
+};
+
 window.onscroll = function () {
   const scrollTop = window.pageYOffset;
 
