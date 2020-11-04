@@ -1,5 +1,6 @@
 "use strict";
-const mainEle = document.getElementById("main");
+const mainEle = document.querySelector("nav");
+const navEle = document.querySelector("main");
 
 // ANIMATING INTRO
 function intro() {
@@ -111,8 +112,10 @@ function debounce(fn, ms) {
 
 // EVENT LISTENERS
 mainEle.style.display = "none";
+navEle.style.display = "none";
 window.onload = function () {
   mainEle.style.display = "block";
+  navEle.style.display = "block";
   main();
 };
 
