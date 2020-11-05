@@ -2,17 +2,12 @@
 function intro() {
   //
   const tl = gsap.timeline();
-  tl.to(".intro__half", {
-    duration: 0.2,
+  tl.to(".intro__ver", {
+    duration: 0.5,
     height: "100vh",
-    ease: "power1.in",
+    ease: "power4.inOut",
+    delay: 0.2,
   })
-    .to(".intro__ver", {
-      duration: 0.5,
-      height: "100vh",
-      ease: "power4.inOut",
-      delay: 0.2,
-    })
     .to(".intro__ver", {
       duration: 1,
       opacity: 0,
@@ -35,27 +30,27 @@ function intro() {
     duration: 1,
     yPercent: 100,
     ease: "power4.out",
-    delay: 2,
+    delay: 1.7,
   });
   gsap.from(".nav__menu__link span", {
     duration: 0.8,
     yPercent: 100,
     stagger: 0.15,
     ease: "power4.out",
-    delay: 2.1,
+    delay: 1.8,
   });
   gsap.from(".nav__socials__link svg", {
     duration: 0.6,
     x: "200px",
     stagger: 0.05,
     ease: "power4.out",
-    delay: 2.1,
+    delay: 1.8,
   });
   gsap.from(".nav__email span", {
     duration: 1,
     y: "100px",
     ease: "power4.out",
-    delay: 2.4,
+    delay: 2.1,
   });
   //
   gsap.from(".home__text p", {
@@ -64,24 +59,24 @@ function intro() {
     opacity: 0,
     stagger: 0.15,
     ease: "power4.out",
-    delay: 2,
+    delay: 1.9,
   });
   gsap.from(".home__text span", {
     duration: 1.2,
     yPercent: 100,
     opacity: 0,
-    delay: 2.2,
+    delay: 2.1,
     ease: "power4.out",
   });
   //
-  gsap.from(".home__mybrain h2", { duration: 1, opacity: 0, delay: 2.4 });
-  gsap.from(".brain-box h3", { duration: 1, opacity: 0, delay: 2.5 });
+  gsap.from(".home__mybrain h2", { duration: 1, opacity: 0, delay: 2.3 });
+  gsap.from(".brain-box h3", { duration: 1, opacity: 0, delay: 2.4 });
   gsap.from(".badge", {
     duration: 1,
     opacity: 0,
-    stagger: 0.06,
+    stagger: 0.05,
     ease: "expo.out",
-    delay: 2.4,
+    delay: 2.3,
   });
 }
 //

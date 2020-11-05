@@ -288,6 +288,7 @@ ul {
 .intro {
   position: fixed;
   top: 0;
+  z-index: 9999;
 }
 
 .intro__half, .intro__ver {
@@ -299,6 +300,7 @@ ul {
 .intro__half {
   left: 0;
   width: 50vw;
+  height: 100vh;
   background-color: #000;
   -webkit-transition: height 0.3s ease;
   transition: height 0.3s ease;
